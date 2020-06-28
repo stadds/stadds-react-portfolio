@@ -1,0 +1,14 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: inherit;
+    padding-top: 80px;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: var(--bodyfont);
+    background-color: var(--primary);
+    color: white;
+    margin: 0;
+  }

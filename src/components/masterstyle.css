@@ -1,0 +1,59 @@
+:root {
+  /* font-size: ; */
+  --primary: #363636;
+  --secondary: #4cd3c2;
+  --third: #b7efcd;
+  --fourth: #ffbcbc;
+  --fifth: #b7ef;
+  --boxshadow: rgba(0, 0, 0, 0.4);
+  --bodyfont: "Anonymous Pro", monospace;
+  --headerfont: "Eczar", serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  padding-top: 80px;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: var(--bodyfont);
+  background-color: var(--primary);
+  color: white;
+  margin: 0;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+.bg-second {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.bg-third{
+  background-color: var(--third);
+  color: var(--primary);
+}
+
+.bg-fourth{
+  background-color: var(--fourth);
+  color: var(--primary);
+}
+
+.no-bg-no-bd{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+hr.fourth {
+  border: 1px solid var(--fourth);
+}
+
+.border-top{
+  border-top: 5px solid var(--fourth) !important;
+  border-radius: 1px;
+}

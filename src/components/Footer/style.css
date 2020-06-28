@@ -1,0 +1,24 @@
+@import url("../masterstyle.css");
+
+.nav-footer:hover {
+  filter: brightness(85%);
+  color: var(--primary);
+}
+
+.fab {
+  font-size: 1.5em;
+}
+
+.fas {
+  font-size: 1.5em;
+}
+
+.bg-fourth {
+  background-color: var(--fourth);
+  color: var(--primary);
+}
+
+.border-top {
+  border-top: 5px solid var(--fourth) !important;
+  border-radius: 1px;
+}
