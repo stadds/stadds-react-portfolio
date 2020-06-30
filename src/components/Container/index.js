@@ -1,14 +1,14 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 
-function Container({ conSize, padding, margin, children }) {
+function Container({ conSize, padding, margin, other, children }) {
   return (
     <div
       className={`container${conSize ? `${conSize}` : ""} ${
         padding ? padding : ""
-      } ${margin ? margin : ""} `}
+      } ${margin ? margin : ""} ${other ? other : ""}`}
     >
-      {...children}
+      {children}
     </div>
   );
 }

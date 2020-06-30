@@ -16,6 +16,7 @@ function Footer() {
                   className="nav-link nav-footer bg-fourth"
                   href="https://github.com/stadds"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-github-square mr-2"></i>GitHub
                 </a>
@@ -25,6 +26,7 @@ function Footer() {
                   className="nav-link nav-footer bg-fourth"
                   href="https://www.linkedin.com/in/samanthataddonio/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-linkedin mr-2"></i>LinkedIn
                 </a>

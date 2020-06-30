@@ -1,8 +1,8 @@
 import React from "react";
 import "../masterstyle.css"
 
-function Row(props){
-    return <div className="row">{props.children}</div>;
+function Row({margin,order, children}){
+    return <div className={`row ${margin ? margin : ""} ${order ? order : ""}`}>{children}</div>;
 }
 
 export default Row;

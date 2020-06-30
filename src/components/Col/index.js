@@ -1,15 +1,16 @@
 import React from "react";
 import "../masterstyle.css";
 
-function Col(props) {
-  const size = props.size
+
+function Col({ size, margin, order, other, children }) {
+  const newSize = size
     .split(" ")
     .map((size) => "col-" + size)
     .join(" ");
 
   return (
-    <div className={size}>
-        {props.children}
+    <div className={`${newSize} ${order ? order : ""} ${other ? other : ""} ${margin ? margin : ""}`}>
+      {children}
     </div>
   );
 }

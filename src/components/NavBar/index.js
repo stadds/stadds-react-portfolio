@@ -2,19 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function NavBar() {
+function NavBar({ logo }) {
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
           <Link className="navbar-brand pr-2" to="/">
-            <img
-              src="./rocket.svg"
-              width="60"
-              height="60"
-              alt=""
-              loading="lazy"
-            ></img>
+            <img src={logo} width="60" height="60" alt="" loading="lazy"></img>
             STadds
           </Link>
           <button
@@ -26,18 +20,19 @@ function NavBar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navtoggle">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li
-                className={
-                  window.location.pathname === "/"
-                    ? "nav-item active"
-                    : "nav-item"
-                }
-              >
-                <Link to="/" className="nav-link">
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  className={
+                    window.location.pathname === "/"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
                   Home
                   {window.location.pathname === "/" ? (
                     <span className="sr-only">(current)</span>
@@ -46,16 +41,17 @@ function NavBar() {
                   )}
                 </Link>
               </li>
-              <li
-                className={
-                  window.location.pathname === "/portfolio"
-                    ? "nav-item active"
-                    : "nav-item"
-                }
-              >
-                <Link to="/portfolio" className="nav-link">
+              <li className="nav-item">
+                <Link
+                  to="/portfolio"
+                  className={
+                    window.location.pathname === "/portfolio"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
                   Portfolio
-                  {window.location.pathname === "/" ? (
+                  {window.location.pathname === "/portfolio" ? (
                     <span className="sr-only">(current)</span>
                   ) : (
                     ""
